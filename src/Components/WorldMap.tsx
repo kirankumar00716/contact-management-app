@@ -13,6 +13,7 @@ const WorldMap = (countries: { countriesData: any }) => {
   return (
     <div>
       <MapContainer
+      
         center={[20, 40]}
         zoom={2}
         bounds={[
@@ -20,8 +21,8 @@ const WorldMap = (countries: { countriesData: any }) => {
           [85, 180],
         ]}
         scrollWheelZoom={true}
-        style={{ height: "600px", width: "100%" }}
-        className="m-auto border-blue-700"
+        style={{ height: "400px", width: "100%" }}
+        className="m-auto w-full  border-blue-700"
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
